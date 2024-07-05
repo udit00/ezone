@@ -19,7 +19,7 @@ class HomeView extends StatelessWidget {
       {"name": "name", "img": "assets/images/user.png"},
     ];
     return  Scaffold(
-      appBar: AppBar(backgroundColor: CommonColors.blackColor,),
+      appBar: AppBar(backgroundColor: CommonColors.bottomNavigationColor,),
       body: SafeArea(
         child:
         SingleChildScrollView(

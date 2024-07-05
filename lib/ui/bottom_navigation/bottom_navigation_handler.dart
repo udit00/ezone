@@ -40,7 +40,7 @@ class _bottom_navigation_handlerState extends State<bottom_navigation_handler> {
         bottomNavigationBar: BottomNavigationBar(
             showUnselectedLabels: false,
             type: BottomNavigationBarType.fixed,
-            backgroundColor: CommonColors.blackColor,
+            backgroundColor: CommonColors.bottomNavigationColor,
             selectedItemColor: CommonColors.lightAppBarColor,
             selectedFontSize: 14.0,
             unselectedFontSize: 12.0,
