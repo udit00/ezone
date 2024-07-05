@@ -1,5 +1,3 @@
-import 'dart:js_interop';
-
 import 'package:ezone/ui/common_ui/common_colors.dart';
 import 'package:flutter/material.dart';
 

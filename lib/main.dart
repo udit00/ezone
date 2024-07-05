@@ -1,3 +1,4 @@
+import 'package:ezone/ui/home/home_view_model.dart';
 import 'package:ezone/ui/login/login_view.dart';
 import 'package:ezone/ui/login/login_view_model.dart';
 import 'package:flutter/material.dart';
@@ -17,6 +18,9 @@ class EZoneApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(
           create: (context) => LoginViewModel(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => HomeViewModel()
         )
       ],
       child: MaterialApp(
