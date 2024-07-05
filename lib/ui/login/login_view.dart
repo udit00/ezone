@@ -7,6 +7,9 @@ import 'package:flutter/widgets.dart';
 import 'package:provider/provider.dart';
 
 class LoginView extends StatelessWidget {
+  
+  const LoginView({super.key});
+
 
   void openHomePage(BuildContext context) {
     Navigator.push(context, 

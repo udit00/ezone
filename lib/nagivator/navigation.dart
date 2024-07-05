@@ -40,11 +40,11 @@ class Navigation {
   static void navigate(BuildContext context, NavigationPage page) {
     switch(page) {
       case NavigationPage.LoginPage : {
-        _pushAndRemoveUntil(context, LoginView());
+        _pushAndRemoveUntil(context, const LoginView());
         break;
       }
       case NavigationPage.HomePage : {
-        _pushAndRemoveUntil(context, HomeView());
+        _pushAndRemoveUntil(context, const HomeView());
       }
       default: throw Exception('Page not found');   
     }
