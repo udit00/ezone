@@ -9,6 +9,7 @@ class TextInput extends StatelessWidget {
       required this.textInputType,
       required this.textController,
       required this.focusNode,
+      this.onChanged,
       this.mMaxline = 1});
 
   final String labelText;
@@ -16,15 +17,16 @@ class TextInput extends StatelessWidget {
   final int mMaxline;
   final TextEditingController textController;
   final FocusNode focusNode;
+  final VoidCallback? onChanged;
 
   @override
   Widget build(BuildContext context) {
     return Flexible(
-      fit: FlexFit.loose,
       child: TextField(
         
           style: Theme.of(context).textTheme.headlineMedium,
           controller: textController,
+          onChanged: (value) => onChanged,
           keyboardType: textInputType,
           focusNode: focusNode,
           cursorColor: CommonColors.inputCursorColor,

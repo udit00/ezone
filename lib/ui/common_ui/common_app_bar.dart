@@ -28,4 +28,8 @@ class CustomAppBar {
       title: Text(_title ?? "DEFAULT TITLE"),
     );
   }
+
+  static AppBar createDarkThemeAppBar(String title) {
+    return CustomAppBar().darkTheme().setTitle(title).create();
+  }
 }

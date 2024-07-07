@@ -1,6 +1,8 @@
 import 'package:ezone/ui/home/home_view_model.dart';
+import 'package:ezone/ui/login/login_repository.dart';
 import 'package:ezone/ui/login/login_view.dart';
 import 'package:ezone/ui/login/login_view_model.dart';
+import 'package:ezone/ui/screen_dimension/screen_dimension.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -12,8 +14,14 @@ void main() {
 class EZoneApp extends StatelessWidget {
   const EZoneApp({super.key});
 
+  void _setScreenDimensions(BuildContext context) {
+    ScreenDimension.width = MediaQuery.of(context).size.width;
+    ScreenDimension.height = MediaQuery.of(context).size.height;    
+  }
+
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) {    
+    _setScreenDimensions(context);
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(

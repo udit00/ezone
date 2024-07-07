@@ -1,10 +1,7 @@
 import 'package:ezone/ui/common_ui/common_colors.dart';
+import 'package:ezone/ui/screen_dimension/screen_dimension.dart';
 import 'package:flutter/material.dart';
 
-class ScreenDimension {
-  static double width = 0.0;
-  static double height = 0.0;
-}
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
 
