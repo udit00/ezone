@@ -5,14 +5,14 @@ import 'package:ezone/ui/search/search_view.dart';
 import 'package:flutter/material.dart';
 
 
-class bottom_navigation_handler extends StatefulWidget {
-  const bottom_navigation_handler({Key? key}) : super(key: key);
+class BottomNavigationHandler extends StatefulWidget {
+  const BottomNavigationHandler({Key? key}) : super(key: key);
 
   @override
-  State<bottom_navigation_handler> createState() => _bottom_navigation_handlerState();
+  State<BottomNavigationHandler> createState() => _BottomNavigationHandlerState();
 }
 
-class _bottom_navigation_handlerState extends State<bottom_navigation_handler> {
+class _BottomNavigationHandlerState extends State<BottomNavigationHandler> {
   int selectedPage = 0;
 
   pageCaller(int index) {

@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
 
 class HomeViewModel extends ChangeNotifier {
-
+  List categoryList = [
+    {"name": "name", "img": "assets/images/user.png"},
+    {"name": "name", "img": "assets/images/user.png"},
+    {"name": "name", "img": "assets/images/user.png"},
+    {"name": "name", "img": "assets/images/user.png"},
+    {"name": "name", "img": "assets/images/user.png"},
+    {"name": "name", "img": "assets/images/user.png"},
+  ];
   String randomText = "RANDOM";
 
   void changedText(String newText) {
