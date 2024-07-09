@@ -39,7 +39,8 @@ class HttpServiceImpl implements ApiService{
         },
         body: jsonEncode(params),
       );
-     CommonResponse finalResp = response.body as CommonResponse;
+    //  CommonResponse finalResp = response.body as CommonResponse;
+     CommonResponse finalResp = CommonResponse.fromJson(jsonDecode(response.body));
      return finalResp;
     } catch (ex) {
       return CommonResponse(

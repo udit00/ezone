@@ -4,6 +4,7 @@ import 'package:ezone/api/http_service.dart';
 
 abstract class ApiService {
   static const String _appName = "ezone";
+  // static const String _appName = "todo";
   static const String baseUrl = "http://157.173.218.215:5000/$_appName/";
   Future<CommonResponse> get(Map<String, dynamic> params, String apiName);
   Future<CommonResponse> post(Map<String, dynamic> params, String apiName);
@@ -22,8 +23,8 @@ abstract class ApiService {
 
 // }
 
-// class ApiServiceImpl extends DioServiceImpl {
-class ApiServiceImpl extends HttpServiceImpl {
+class ApiServiceImpl extends DioServiceImpl {
+// class ApiServiceImpl extends HttpServiceImpl {
 
   ApiServiceImpl._privateConstructor();
 

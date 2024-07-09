@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class LoginViewModel extends ChangeNotifier {
 
-  LoginRepository _repo = LoginRepository();
+  final LoginRepository _repo = LoginRepository();
   TextEditingController mobileController = TextEditingController();
   TextEditingController passWordController = TextEditingController();
 
@@ -18,11 +18,13 @@ class LoginViewModel extends ChangeNotifier {
     Map<String, dynamic> params = {
       "prm_mobileno": mobile,
       "prm_password": passWord,
+      // "prm_mobileno": "7011490531",
+      // "prm_password": "Udit@123",
       "prm_useripaddress": "",
       "prm_platform": "ANDROID"
     };
     _repo.userLogin(params).then((value) => {
-      debugPrint(value.data.toString())
+       debugPrint(value.data.toString())
     });
   }
 }
